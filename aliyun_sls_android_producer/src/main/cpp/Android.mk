@@ -4,8 +4,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := aliyun_log_c_sdk
 LOCAL_SRC_FILES := libs/$(TARGET_ARCH_ABI)/libaliyun_log_c_sdk.a
 LOCAL_EXPORT_CFLAGS := -I$(LOCAL_PATH)/libs/include
-#增加16KB页面对齐参数
-LOCAL_LDFLAGS += -Wl,-z,max-page-size=16384
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
